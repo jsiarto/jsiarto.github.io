@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Earthdata Information Architecture</title>
+        <meta name="description" content="Default HTML5 goodness for NASA EOSDIS sites">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+            <script type="text/javascript">
+              google.load("visualization", "1", {packages:["treemap"]});
+              google.setOnLoadCallback(drawChart);
+              function drawChart() {
+                // Create and populate the data table.
+                var data = google.visualization.arrayToDataTable([
+                  ['Page',  'Parent', 'Section size (size)', 'Category (color)'],
+                  ['Home',                             null,                0,   0],
+                  ['About (54)',                           'Home',               54,  0],
+                  ['ESDIS Project (9)',                   'About (54)',              9,   0],
+                  ['ESDIS Mission Statement (1)',   'ESDIS Project (9)',              1,   0],
+                  ['ESDIS Org Chart (1)',   'ESDIS Project (9)',              1,   0],
+                  ['Earth Science Program Overview (2)',   'ESDIS Project (9)',              2,   0],
+                  ['ESDIS Directory (1)',   'ESDIS Project (9)',              1,   0],
+                  ['ESDIS ISO Traning (1)',   'ESDIS Project (9)',              1,   0],
+                  ['ESDIS Standards Office (1)',   'ESDIS Project (9)',              1,   0],
+                  ['ESDIS Acronym List (1)',   'ESDIS Project (9)',              1,   0],
+                  ['System Performance (8)',              'About (54)',              8,   0],
+                  ['ACSI Reports (1)',              'System Performance (8)',              1,   0],
+                  ['EOSDIS Annual Metrics Report (1)',              'System Performance (8)',              1,   0],
+                  ['Weekly Metrics (4)',              'System Performance (8)',              4,   0],
+                  ['EOSDIS Watch Details (1)',              'System Performance (8)',              1,   0],
+                  ['Science System Description (32)',      'About (54)',              32,  2],
+                  ['EOSDIS Data Centers (2)',      'Science System Description (32)',              2,  0],
+                  ['EOS Clearninghouse (6)',      'Science System Description (32)',              6,  0],
+                  ['ESDIS Metrics System (6)',      'Science System Description (32)',              6,  0],
+                  ['GIBS (4)',      'Science System Description (32)',              4,  0],
+                  ['LANCE (9)',      'Science System Description (32)',              9,  0],
+                  ['URS (3)',      'Science System Description (32)',              3,  0],
+                  ['Web Infrastructure (1)',      'Science System Description (32)',              1,  0],
+                  ['Data System Interfaces (1)',          'About (54)',              1,   0],
+                  ['Reference Requirements (1)',          'About (54)',              1,   0],
+                  ['EOSDIS News (1)',                     'About (54)',              1,   0],
+                  ['Internal Account Request Form (1)',   'About (54)',              1,   0],                  
+                  ['Data (125)',                            'Home',               125, 4],
+                  ['Discovering Data (1)',                'Data (125)',               1,   0],            
+                  ['Data Tools (6)',                      'Data (125)',               6,   0],
+                  ['Data Centers (1)',                    'Data (125)',               1,   0],
+                  ['Near Real-time Data (80)',             'Data (125)',               80,  3],
+                  ['Data (26)',                'Near Real-time Data (80)',               26,   2],
+                  ['Visualization (8)',                'Near Real-time Data (80)',               8,   0],
+                  ['FIRMS (8)',                'Near Real-time Data (80)',               8,   0],
+                  ['Rapid Response (10)',                'Near Real-time Data (80)',               10,   0],
+                  ['Learn (1)',                'Near Real-time Data (80)',               1,   0],
+                  ['About Lance (19)',                'Near Real-time Data (80)',               19,   1],
+                  ['FAQ (7)',                'Near Real-time Data (80)',               7,   0],            
+                  ['Standards and References (36)',        'Data (125)',               36,  2],
+                  ['Standards Process Overviews (5)',        'Standards and References (36)',               5,  0],
+                  ['Data Format Standards (1)',        'Standards and References (36)',               1,  0],
+                  ['Discovery and Access Tech (1)',        'Standards and References (36)',               1,  0],
+                  ['Metadata Standards (1)',        'Standards and References (36)',               1,  0],
+                  ['Heritage Standards (17)',        'Standards and References (36)',               17,  1],
+                  ['NASA ESSRS (1)',        'Standards and References (36)',               1,  0],
+                  ['Earth Science Disciplines (8)',        'Standards and References (36)',               8,  0],
+                  ['ESDS Glossary (1)',        'Standards and References (36)',               1,  0],                  
+                  ['Community (74)',                       'Home',               74,  3],
+                  ['Community Data System Programs (11)',  'Community (74)',          11,  1],
+                  ['ESDSWG (49)',                          'Community (74)',          49,  2],
+                  ['Meetings (1)',                          'ESDSWG (49)',          1,  0],
+                  ['Software Reuse (24)',                          'ESDSWG (49)',          24,  2],
+                  ['Standards Process (14)',                          'ESDSWG (49)',          14,  1],
+                  ['Technology Infusion (7)',                          'ESDSWG (49)',          7,  0],
+                  ['Interagency (4)',                     'Community (74)',          4,   0],
+                  ['International (7)',                   'Community (74)',          7,   0],
+                  ['Data System Communities (5)',         'Community (74)',          5,   0],
+                  ['User Resources (15)',                  'Home',               15,  0],
+                  ['Outreach Products (2)',               'User Resources (15)',     2,   0],
+                  ['Tutorials and Examples (6)',          'User Resources (15)',     6,   0],
+                  ['Data in Action (3)',                  'User Resources (15)',     3,   0],
+                  ['Image Galleries (1)',                 'User Resources (15)',     1,   0],
+                  ['Meetings, Workshops and Events(1)',  'User Resources (15)',     1,   0],
+                  ['Helpful URLs (1)',                    'User Resources (15)',     1,   0],
+                  ['ECE (1)',                             'Home',               1,   0],
+                  ['Labs (2)',                            'Home',               2,   0],
+                  ['Worldview (1)',                       'Labs (2)',               1,   0]
+                ]);
+
+                // Create and draw the visualization.
+                var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+                tree.draw(data, {
+                  headerHeight: 25,
+                  headerColor: '#e3e3e3',
+                  fontColor: 'black',
+                  minColor: '#93bbd5',
+                  midColor: '#d4a591',
+                  maxColor: '#adb967',
+                  maxPostDepth: 3,
+                  maxDepth: 3,
+                  showScale: false});
+                }
+            </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+          <div id="chart_div" style="width: 100%; height: 700px;"></div>
+          
+          <!--
+          <section id="current-ia">
+            <ul>
+              <li>About
+                <ul data-size="54">
+                  <li data-size="9">ESDIS Project</li>
+                  <li data-size="8">System Performance</li>
+                  <li data-size="32">Science System Description</li>
+                  <li data-size="1">Data System Interfaces</li>
+                  <li data-size="1">Reference Requirements</li>
+                  <li data-size="1">EOSDIS News</li>
+                  <li data-size="1">Internal Account Request Form</li>
+                </ul>
+              </li>
+              <li>Data
+                <ul data-size="125">
+                  <li data-size="1">Discovering Data</li>
+                  <li data-size="6">Data Tools</li>
+                  <li data-size="1">Data Centers</li>
+                  <li data-size="80">Near Real-time Data</li>
+                  <li data-size="36">Standards and References</li>
+                </ul>
+              </li>
+              <li>Community
+                <ul data-size="74">
+                  <li data-size="11">Community Data System Programs</li>
+                  <li data-size="49">ESDSWG</li>
+                  <li data-size="4">Interagency</li>
+                  <li data-size="7">International</li>
+                  <li data-size="5">Data System Communities</li>
+                </ul>
+              </li>
+              <li>User Resources
+                <ul data-size="15">
+                  <li data-size="2">Outreach Products</li>
+                  <li data-size="6">Tutorials and Examples</li>
+                  <li data-size="3">Data in Action</li>
+                  <li data-size="1">Image Galleries</li>
+                  <li data-size="1">Meetings, Workshops and Events</li>
+                  <li data-size="1">Helpful URLs</li>
+                </ul>
+              </li>
+              <li>ECE</li>
+              <li>Labs
+                <ul data-size="2">
+                  <li data-size="1">Worldview</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+            -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
