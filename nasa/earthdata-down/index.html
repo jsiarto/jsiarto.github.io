@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Earthdata is currently unavailable</title>
+        <meta name="description" content="Default HTML5 goodness for NASA EOSDIS sites">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css" media="screen">
+        html {
+          -webkit-font-smoothing: antialiased;
+        }
+        body {
+          background: url(starfield.jpg);
+          border-top: 5px solid #ed2b38;
+          margin: 0;
+          padding: 40px 0 0 0;
+          text-align: center;
+          color: #fff;
+          font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        }
+        
+        .wrap {
+          width: 900px;
+          margin: 0 auto;
+        }
+        
+        h1 {
+          font-weight: 100;
+          font-size: 2.8em;
+        }
+        
+        p {
+          font-size: 1.2em;
+          font-weight: 200;
+        }
+        
+        .earth {
+          width: 300px;
+          height: 300px;
+          background: url(earth.png);
+          margin: 0 auto;
+        }
+        
+        .orbit {
+          width: 300px;
+          height: 300px;
+          background: url(terra.png);
+          margin: 0 auto;
+          transition: all 3s ease-in-out;
+          -webkit-transition: all 3s ease-in-out;
+          -moz-transition: all 3s ease-in-out;
+          -o-transition: all 3s ease-in-out;
+        }
+        
+        .orbit:hover {
+          transform: rotate(-720deg);
+          -webkit-transform: rotate(-720deg);
+          -moz-transform: rotate(-720deg);
+          -o-transform: rotate(-720deg);
+        }
+        </style>
+    </head>
+    <body>
+      <div class="wrap">
+        <img alt="NASA" src="nasa.png" />
+        <h1>Sorry, Earthdata is currently unavailable.</h1>
+        <p>Thanks for your patience as the Earthdata team works to restore service. Questions can be directed to support@earthdata.nasa.gov.</p>
+        <div class="earth">
+          <div class="orbit"></div>
+        </div>
+      </div>
+    </body>
+</html>
