@@ -1,0 +1,360 @@
+/*
+Title:		Young and Champagne style for screen media
+Author:		jeff@siartolabs.com
+Updated:	31 October 2005
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: small;
+	text-align: left;
+	line-height: 1.5em;
+	background: url(../img/side_bg.gif) repeat-y;
+}
+
+#wrap {
+	margin-left: 11px;
+	padding: 0;
+	width: 775px;
+}
+
+#header {
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	background: url(../img/header_bg.gif);
+	border-bottom: 5px solid #DDDDDD;
+}
+
+a:link, a:visited {
+	color: #333399;
+}
+
+/*---------- Navigation ----------*/
+
+#nav {
+	position: relative;
+	margin: 0;
+	padding: 65px 0 0 245px;
+	
+}
+
+#nav ul {
+	margin: 0;
+	padding: 9px 0 0 10px;
+	text-align: left;
+	list-style: none;
+}
+
+#nav li {
+	margin: 0 55px 0 0;
+	padding: 0;
+	font-size: 90%;
+	font-weight: bold;	
+	display: inline;
+	text-decoration: none;
+	color: #DDDDDD;
+}
+
+#nav a {
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#nav a.active, #nav a:hover {
+	border-bottom: 5px solid #DDDDDD;
+}
+
+body.page #content {
+	margin-left: 216px;
+	margin-top: 35px;
+	padding-left: 20px;
+}
+
+body.page #content h1 {
+	color: #333333;
+	font-size: x-large;
+}
+
+body.page #content h2 {
+	margin: 0;
+	padding: 0 0 0 20px;
+	color: #333333;
+	font-size: small;
+	background: url(../img/icons/user.gif) no-repeat 0 0;
+}
+
+body.page #content h3 {
+	margin: 5px 0 0 0;
+	padding: 0 0 0 20px;
+	color: #999999;
+	font-size: small;
+}
+
+body.page #content em.ext {
+	color: #999999;
+	font-size: small;
+	font-style: normal;
+}
+
+body.page #content a.email {
+	margin: 0 0 0 20px;
+	padding: 0 0 0 20px;
+	color: #999999;
+	font-size: small;
+	background: url(../img/icons/email_open.gif) no-repeat center left;
+}
+
+body.page #content p {
+	color: #333333;
+	font-size: small;
+}
+
+body.page #content img {
+	float: right;
+	margin: 0;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+}
+
+body.page #manDetail {
+
+}
+
+body.page #content img.smLogo {
+	float: left;
+	margin:  5px 5px 0px 0px;
+	padding: 0;
+}
+
+body.page #content h4 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #333333;
+	font-size: large;
+}
+
+body.page #content p.manf {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+	color: #777777;
+}
+
+body.page #list {
+	padding: 0 0 0 20px;
+}
+
+body.page #list li {
+	margin: 0 0 15px 0;
+	list-style-type: square;
+}
+
+body.page em.grSmall {
+	color: #777;
+	font-style: normal;
+}
+
+body.page #sidebar {
+	float: left;
+	top: 105px;
+	margin-top: 20px;
+	width: 216px;
+}
+
+/*---------- Sub Navigation ----------*/
+
+#pagenav {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#pagenav ul {
+	list-style-type: none;
+}
+
+#pagenav li {
+	margin: 0;
+	padding: 0px;
+	border-bottom: 1px solid #CCC;
+}
+
+#pagenav li.active {
+	background: #EEEEEE;
+}
+
+#pagenav li.active a {
+	color: #333333;
+	background: url(../img/icons/sm_arrow.gif) no-repeat 100% 5px;
+}
+
+#pagenav a {
+	display: block;
+	margin: 0;
+	padding: 3px 20px 3px 0;
+	text-decoration: none;
+	color: #999;
+}
+
+#pagenav a:hover {
+	color: #333333;
+	background: #EEEEEE url(../img/icons/sm_arrow.gif) no-repeat 100% 5px;
+}
+
+body.index #content {
+	margin-right: 240px;
+	margin-top: 160px;
+}
+
+body.index #content p.intro {
+	margin: 30px 20px 30px 20px;
+	padding: 0;
+	padding-bottom: 10px;
+	font-size: small;
+	font-weight: bold;
+	line-height: 23px;
+	color: #666666;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+body.index #content p.intro strong {
+	color: #333333;
+}
+
+#hdrimg {
+	position: absolute;
+	top: 105px;
+	left: 11px;
+}
+
+body.index #content h1 {
+	margin: 0 0 0 20px;
+	padding: 10px;
+	padding-left: 25px;
+	font-size: large;
+	color: #333333;
+	background: url(../img/icons/info.gif) no-repeat center left;
+}
+
+body.index #content h2 {
+	margin: 0 0 0 20px;
+	padding: 0;
+	font-size: small;
+	font-weight: bold;
+	color: #2C1E71;
+}
+
+body.index #content p.news {
+	margin: 0 0 0 20px;
+	font-size: small;
+	color: #333333;
+}
+
+body.index em.date {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	color: #777;
+}
+
+body.index #sidebar {
+	position: absolute;
+	top: 105px;
+	left: 570px;
+	margin-top: 20px;
+	width: 216px;
+}
+
+body.index blockquote {
+	margin: 0;
+	padding: 0;
+	font-size: large;
+	font-weight: bold;
+	line-height: 23px;
+	color: #333;
+	background: #FFFFFF url(../img/quote-t.gif) no-repeat top left;
+}
+
+body.index #quote {
+	margin: 0 10px 0 0;
+	padding: 20px 0 20px 10px;
+	background: url(../img/quote-b.gif) no-repeat right bottom;
+}
+
+body.index #quote strong {
+	color: #555;
+	font-weight: normal;
+}
+
+body.index #author {
+	margin: 0 10px 0 0;
+	padding: 0 0 10px 0;
+	text-align: right;
+	color: #333333;
+	font-size: small;
+	font-weight: normal;
+}
+
+p.side {
+	margin: 0;
+	padding: 10px;
+	background: #EEEEEE url(../img/box-b.gif) no-repeat bottom right;
+	font-size: small;
+}
+
+#reps {
+	margin: 0;
+	padding: 10px;
+	background: #EEEEEE url(../img/box-b.gif) no-repeat bottom right;
+	font-size: small;
+}
+
+#reps li {
+	margin: 0 0 15px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#reps a {
+	margin: 0;
+	padding: 0 0 0 10px;
+	font-size: small;
+	text-decoration: none;
+}
+
+#reps a:hover {
+	text-decoration: underline;
+}
+
+img.repIcon {
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: 2px solid #999;
+}
+
+
+
+#sidebar h2 {
+	margin: 10px 0 0 0;
+	padding: 2px;
+	padding-left: 10px;
+	font-size: small;
+	color: #FFFFFF;
+	background: #999999 url(../img/box-t.gif) no-repeat top left;
+}
+
+#footer {
+	margin: 60px 0 0 0;
+	padding: 10px;
+	text-align: center;
+	font-size: small;
+	border-top: 1px solid #ddd;
+	color: #999;
+}
